@@ -1,0 +1,12 @@
+{{#each model.calificacion as |lista|}}
+<p class= "salutate">
+   <h2>{{lista.nombre}}</h2>
+</p>
+<p class= "salutate">
+    {{lista.leyenda}}
+</p>
+{{/each}}
+{{color-detail calificacion=model}}
+{{outlet}}
+
+

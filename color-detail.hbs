@@ -1,0 +1,17 @@
+
+<div class="input-field col s6">
+<label for="Number1">Agregar nuevo todo</label><br>
+          {{input type="text" id="valoringresado" value=valoringresado name =valoringresado}}<br>
+          
+        </div>
+  
+ {{input type="submit" id="ingresartodo" value=ingresartodo name =ingresar placeholder=enviar}}<br>
+     <div class="row">
+          {{#if model.message}}
+            se ha ingresado a la lista: {{model.ingresartodo}}
+          {{else}}
+            Algo ha fallado
+          {{/if}}
+      </div>
+
+{{yield}}
